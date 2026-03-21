@@ -1,7 +1,7 @@
-import { isNotEmpty, isString } from 'class-validator';
+import { IsNotEmpty, IsString } from "class-validator";
 
 export class BasicPromptDto {
-  @isString()
-  @isNotEmpty()
+  @IsNotEmpty()
+  @IsString()
   prompt: string;
 }
